@@ -1,0 +1,121 @@
+Tea Name,Mood,Weather,Time of Day,Brewing Time (mins),Season,Caffeine Level,Flavor Profile,Popularity
+Green Tea Genmaicha,Calm,Sunny,Afternoon,3-5,Summer,Medium,Roasted Rice,4
+Moroccan Mint Tea,Energized,Hot,Evening,4-6,Summer,Low,Minty Fresh,5
+Russian Caravan,Calm,Cold,Morning,5-7,Winter,High,Smoky,4
+Kombucha Tea,Calm,Hot,Morning,2-3,Summer,Low,Tangy,3
+Butterfly Pea Flower Tea,Calm,Cold,Afternoon,3-4,Summer,,Blue Floral,3
+Vanilla Rooibos,Relaxed,Cold,Evening,4-6,Winter,,Sweet Vanilla,4
+Lapsang Souchong,Energized,Cold,Morning,4-6,Winter,High,Smoky,5
+Hojicha,Relaxed,Hot,Afternoon,2-3,Autumn,Low,Roasted,3
+Milk Oolong,Balanced,Hot,Afternoon,4-6,Spring,Medium,Creamy,4
+Nettle Tea,Calm,Cold,Morning,3-5,Spring,,Herbal Green,3
+Rosehip Tea,Energized,Cold,Evening,4-5,Autumn,,Tart,3
+Elderberry Tea,Immune,Cold,Evening,3-4,Winter,,Berry,4
+Golden Monkey Black Tea,Focused,Sunny,Morning,4-6,Summer,High,Malty,5
+Kukicha,Calm,Hot,Afternoon,2-3,Summer,Low,Light Green,3
+Chrysanthemum Tea,Calm,Cold,Evening,3-4,Autumn,,Floral,3
+Buckwheat Tea,Balanced,Cold,Morning,3-5,Winter,,Nutty,3
+Raspberry Leaf Tea,Balanced,Hot,Evening,4-5,Summer,,Herbal,3
+Mugwort Tea,Calm,Cold,Evening,3-4,Autumn,,Herbal,2
+Gunpowder Green Tea,Focused,Hot,Morning,3-5,Summer,Medium,Smoky Green,4
+Licorice Root Tea,Relaxed,Cold,Evening,4-5,Winter,,Sweet,3
+Dandelion Root Tea,Calm,Hot,Morning,4-6,Spring,,Earthy,3
+Sage Tea,Focused,Cold,Morning,3-4,Autumn,,Herbal,3
+Red Clover Tea,Calm,Cold,Evening,3-5,Summer,,Mild Herbal,3
+Fennel Seed Tea,Digestive,Hot,After Meal,3-4,Winter,,Anise,3
+Passionflower Tea,Relaxed,Cold,Evening,4-5,Summer,,Floral,3
+Hawthorn Berry Tea,Heart-Healthy,Cold,Afternoon,3-4,Autumn,,Tart Berry,3
+Rhodiola Tea,Energized,Hot,Morning,3-5,Summer,Low,Herbal,4
+Ashwagandha Tea,Relaxed,Cold,Evening,4-5,Winter,,Earthy,3
+Moringa Tea,Energized,Hot,Morning,2-3,Summer,Low,Green Herbal,4
+Valerian Root Tea,Calm,Cold,Evening,4-5,Autumn,,Earthy,3
+Calendula Tea,Relaxed,Cold,Evening,3-4,Summer,,Floral,3
+Echinacea Tea,Immune,Hot,Morning,3-5,Winter,,Herbal,4
+Kava Kava Tea,Relaxed,Cold,Evening,4-5,Summer,,Earthy,3
+Guayusa Tea,Focused,Hot,Morning,3-4,Summer,High,Clean Herbal,4
+Holy Basil Tea,Balanced,Hot,Afternoon,3-4,Summer,Low,Herbal Spice,4
+Chaga Mushroom Tea,Immune,Cold,Morning,4-6,Winter,,Earthy,3
+Reishi Mushroom Tea,Calm,Cold,Evening,4-5,Autumn,,Woody,3
+Marshmallow Root Tea,Relaxed,Cold,Evening,3-4,Winter,,Mild Sweet,3
+Solomon's Seal Tea,Calm,Cold,Evening,4-5,Autumn,,Herbal,2
+Blue Vervain Tea,Calm,Cold,Evening,3-4,Summer,,Herbal,3
+Wild Cherry Bark Tea,Relaxed,Cold,Evening,4-5,Winter,,Bark,3
+Catnip Tea,Relaxed,Cold,Evening,3-4,Summer,,Herbal,3
+St. John's Wort Tea,Energized,Hot,Morning,3-5,Summer,,Herbal,3
+Skullcap Tea,Calm,Cold,Evening,4-5,Autumn,,Herbal,3
+Damiana Tea,Energized,Hot,Afternoon,3-4,Summer,Low,Herbal,3
+Pau D'Arco Tea,Immune,Hot,Morning,4-5,Summer,,Woody,3
+Yarrow Tea,Calm,Cold,Evening,3-4,Summer,,Herbal,3
+Linden Flower Tea,Calm,Cold,Evening,3-4,Summer,,Floral,3
+Slippery Elm Tea,Relaxed,Hot,Afternoon,4-5,Winter,,Mild Bark,3
+Comfrey Leaf Tea,Calm,Cold,Evening,3-4,Autumn,,Herbal,2
+Chicory Root Tea,Digestive,Hot,Morning,4-5,Winter,,Roasted,3
+Burdock Root Tea,Calm,Hot,Morning,4-5,Autumn,,Earthy,3
+Olive Leaf Tea,Heart-Healthy,Cold,Afternoon,3-4,Summer,,Herbal,3
+Cat's Claw Tea,Immune,Hot,Morning,3-5,Summer,,Woody,4
+Sarsaparilla Tea,Energized,Hot,Afternoon,3-4,Summer,,Root,3
+Saw Palmetto Tea,Balanced,Cold,Evening,4-5,Autumn,,Herbal,3
+Dong Quai Tea,Balanced,Hot,Afternoon,3-4,Autumn,,Herbal,3
+Wild Lettuce Tea,Calm,Cold,Evening,4-5,Summer,,Mild Herbal,3
+Borage Tea,Energized,Hot,Morning,3-4,Summer,,Herbal,3
+Alfalfa Tea,Balanced,Hot,Morning,3-5,Summer,,Grassy,3
+Devil's Claw Tea,Balanced,Cold,Evening,4-5,Autumn,,Earthy,3
+Gotu Kola Tea,Focused,Hot,Morning,3-4,Summer,Low,Herbal,4
+Eleuthero Tea,Balanced,Hot,Morning,3-5,Summer,Low,Root,4
+Milk Thistle Tea,Calm,Hot,Afternoon,4-5,Summer,,Herbal,3
+Astragalus Tea,Immune,Hot,Morning,3-5,Winter,,Root,4
+Angelica Root Tea,Relaxed,Cold,Evening,4-5,Winter,,Spicy Root,3
+Blue Cohosh Tea,Balanced,Cold,Evening,3-4,Autumn,,Herbal,2
+Red Raspberry Leaf Tea,Balanced,Hot,Evening,3-4,Summer,,Herbal,3
+Chasteberry Tea,Balanced,Hot,Afternoon,3-4,Summer,,Herbal,3
+Coltsfoot Tea,Balanced,Cold,Evening,3-4,Spring,,Herbal,3
+Plantain Leaf Tea,Calm,Cold,Evening,3-4,Summer,,Herbal,3
+Wild Oregano Tea,Immune,Hot,Morning,3-4,Summer,,Herbal Spice,4
+Thyme Tea,Balanced,Hot,Morning,3-4,Summer,,Herbal Spice,3
+Elecampane Root Tea,Balanced,Cold,Evening,4-5,Autumn,,Root,3
+Mullein Leaf Tea,Relaxed,Cold,Evening,3-4,Autumn,,Mild Herbal,3
+White Willow Bark Tea,Calm,Hot,Afternoon,4-5,Autumn,,Bark,3
+Lobelia Tea,Balanced,Cold,Evening,3-4,Summer,,Herbal,2
+Damask Rose Tea,Relaxed,Hot,Evening,3-4,Summer,,Floral,4
+Spirulina Tea,Balanced,Hot,Morning,2-3,Summer,,Green,3
+Barley Grass Tea,Calm,Hot,Morning,3-4,Summer,,Grassy,3
+Wheatgrass Tea,Calm,Hot,Morning,2-3,Summer,,Green,3
+Nettle Seed Tea,Calm,Hot,Morning,3-4,Summer,,Nutty Herbal,3
+Haritaki Tea,Digestive,Hot,Afternoon,3-4,Summer,,Herbal,3
+Guduchi Tea,Immune,Hot,Morning,3-5,Summer,,Herbal,4
+Triphala Tea,Digestive,Hot,Morning,3-4,Summer,,Herbal,3
+Tulsi Green Tea,Balanced,Hot,Afternoon,3-4,Summer,Low,Herbal Green,4
+Chanca Piedra Tea,Balanced,Hot,Morning,3-5,Summer,,Herbal,3
+Cordyceps Tea,Energized,Hot,Morning,3-4,Summer,Low,Earthy,4
+Lion's Mane Tea,Focused,Hot,Morning,3-4,Summer,,Mushroom,3
+Reishi Green Tea,Immune,Hot,Afternoon,3-4,Summer,Low,Herbal Green,4
+Jiaogulan Tea,Balanced,Hot,Afternoon,3-5,Summer,Low,Herbal,4
+Green Tea,Relaxed,Hot,Morning,3-5,Summer,Medium,Earthy,4
+Chai,Energized,Cold,Morning,4-6,Winter,High,Spicy,5
+Chamomile,Calm,Cold,Evening,3-4,Summer,,Floral,4
+Black Tea,Focused,Sunny,Morning,5-7,Winter,High,Bold,5
+Earl Grey,Balanced,Hot,Afternoon,4-6,Winter,Medium,Citrusy,4
+Peppermint,Energized,Hot,Evening,2-3,Summer,,Minty,3
+Matcha,Energized,Hot,Morning,2-4,Summer,High,Umami,5
+Oolong,Balanced,Hot,Afternoon,4-6,Monsoon,Medium,Floral,4
+Masala Chai,Energized,Cold,Morning,4-7,Winter,High,Spicy,5
+Jasmine Tea,Relaxed,Hot,Evening,3-4,Summer,Medium,Floral,4
+Darjeeling,Balanced,Hot,Afternoon,4-6,Winter,Medium,Fruity,4
+Sencha,Focused,Sunny,Morning,2-3,Summer,Medium,Grassy,3
+Ginger Tea,Energized,Cold,Afternoon,3-5,Monsoon,High,Spicy,5
+White Tea,Relaxed,Cold,Morning,2-3,Summer,Low,Light Floral,4
+Rooibos,Calm,Cold,Evening,4-6,Winter,,Sweet,3
+Chai,Energized,Cold,Afternoon,3-5,Winter,High,Spicy,5
+Hibiscus Tea,Calm,Hot,Evening,5-7,Summer,,Tart,4
+Turmeric Tea,Calm,Hot,Morning,3-5,Winter,Low,Spicy,4
+Lemon Balm,Relaxed,Cold,Evening,4-5,Summer,,Citrus,3
+Lavender Tea,Relaxed,Cold,Evening,3-4,Summer,,Floral,4
+White Peony,Relaxed,Hot,Afternoon,3-5,Spring,Low,Light Floral,3
+Chai Spices,Energized,Cold,Morning,5-6,Winter,High,Spicy,5
+Yerba Mate,Focused,Sunny,Morning,4-5,Summer,High,Herbal,4
+Assam Tea,Focused,Sunny,Morning,4-6,Summer,High,Bold,5
+Peach Tea,Relaxed,Hot,Evening,3-4,Summer,Low,Fruity,4
+Lemon Tea,Energized,Hot,Afternoon,3-5,Summer,Medium,Citrusy,4
+Bai Mu Dan,Relaxed,Cold,Evening,3-5,Spring,Low,Floral,3
+Puerh Tea,Balanced,Cold,Morning,3-5,Winter,High,Earthy,5
+Ceylon Tea,Energized,Sunny,Afternoon,4-6,Summer,Medium,Bold,4
