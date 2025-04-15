@@ -1,0 +1,296 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Tea Recommendation System</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    <div class="container">-->
+<!--        <h1>Find Your Perfect Tea</h1>-->
+
+<!--        &lt;!&ndash; Location Input &ndash;&gt;-->
+<!--        <label for="location">Enter Your Location:</label>-->
+<!--        <input type="text" id="location" placeholder="Your Location">-->
+
+<!--        &lt;!&ndash; Mood Slider &ndash;&gt;-->
+<!--        <label for="mood">Select Your Mood:</label>-->
+<!--        <input type="range" id="mood" min="0" max="4" step="1" value="0">-->
+<!--        <div id="moodLabel">Calm</div>-->
+
+<!--        &lt;!&ndash; Time of Day Selection &ndash;&gt;-->
+<!--        <label for="timeOfDay">Select Time of Day:</label>-->
+<!--        <select id="timeOfDay">-->
+<!--            <option value="morning">Morning</option>-->
+<!--            <option value="afternoon">Afternoon</option>-->
+<!--            <option value="evening">Evening</option>-->
+<!--        </select>-->
+
+<!--        &lt;!&ndash; Recommendation Button &ndash;&gt;-->
+<!--        <button onclick="getTeaRecommendation()">Get Tea Recommendation</button>-->
+
+<!--        &lt;!&ndash; Tea Flashcard &ndash;&gt;-->
+<!--        <div class="tea-card" id="teaCard" style="display: none;">-->
+<!--            <img id="teaImage" src="" alt="Tea Image">-->
+<!--            <h2 id="teaName"></h2>-->
+<!--            <p id="funFact"></p>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <script src="script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Recommendation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5e8c7 0%, #e6d8ad 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #3a2f1f;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #4a3c2a;
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 600;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #d8c9a3;
+            border-radius: 10px;
+            font-size: 1em;
+            background: #fff;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #8b6f47;
+            box-shadow: 0 0 8px rgba(139, 111, 71, 0.3);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 10px 0 20px;
+            -webkit-appearance: none;
+            height: 8px;
+            background: #d8c9a3;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #8b6f47;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        input[type="range"]:focus {
+            background: #c7b58f;
+        }
+
+        #moodLabel {
+            text-align: center;
+            color: #4a3c2a;
+            font-size: 1em;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #d8c9a3;
+            border-radius: 10px;
+            font-size: 1em;
+            background: #fff;
+            color: #4a3c2a;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a3c2a' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 20px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #8b6f47;
+            box-shadow: 0 0 8px rgba(139, 111, 71, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #8b6f47, #a68a64);
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 111, 71, 0.4);
+        }
+
+        .tea-card {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f3e3;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .tea-card h2 {
+            color: #3a2f1f;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .tea-card p {
+            color: #4a3c2a;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            button {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Perfect Tea</h1>
+
+        <!-- Location Input -->
+        <label for="location">Enter Your Location:</label>
+        <input type="text" id="location" placeholder="Your Location">
+
+        <!-- Mood Slider -->
+        <label for="mood">Select Your Mood:</label>
+        <input type="range" id="mood" min="0" max="4" step="1" value="0">
+        <div id="moodLabel">Calm</div>
+
+        <!-- Time of Day Selection -->
+        <label for="timeOfDay">Select Time of Day:</label>
+        <select id="timeOfDay">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+        </select>
+
+        <!-- Recommendation Button -->
+        <button onclick="getTeaRecommendation()">Get Tea Recommendation</button>
+
+        <!-- Tea Flashcard -->
+        <div class="tea-card" id="teaCard" style="display: none;">
+            <h2 id="teaName"></h2>
+            <p id="funFact"></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
